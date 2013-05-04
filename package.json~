@@ -10,7 +10,6 @@
     "jade": "*",
     "stylus": "*",
     "marked": "*",
-    "request": "*",
-    "json-schema": "*"
+    "request": "*"
   }
 }

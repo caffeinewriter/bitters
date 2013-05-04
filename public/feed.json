@@ -1,0 +1,14 @@
+{
+    "shareable": true,
+    "feedItems": [
+        {
+            "id": 1,
+            "author": "Your name",
+            "source": "http://example.com",
+            "time": "3:08PM",
+            "date": "May 1, 2013",
+            "content": "Sample Feed Item"
+        }
+
+    ]
+}

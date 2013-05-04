@@ -7,7 +7,7 @@ var express = require('express')
   , routes = require('./routes')
   , http = require('http')
   , path = require('path');
-
+  , feed = require('feed');
 
 var app = express();
 
@@ -29,7 +29,16 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
-app.get('/', routes.index);
+app.get('/', function(req, res){
+  
+  feed.retrieve(req.headers.host, function(feedArray) {
+    res.render('index', {
+      feedItems: feedArray
+    });
+  });
+
+});
+
 app.get('/about', routes.about);
 
 http.createServer(app).listen(app.get('port'), function(){

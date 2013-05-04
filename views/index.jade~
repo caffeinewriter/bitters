@@ -3,7 +3,7 @@ extends layout
 block content
   h1= title
   // Uncomment below to use the feed. Available item options are: content, date, time, author, id, source
-  //.feed
+  .feed
       h2 The Feed:
       ul
         each item in feedItems
