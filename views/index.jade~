@@ -11,4 +11,5 @@ block content
       hr
   include ../content.md
 
+extends layout
 
