@@ -10,6 +10,7 @@
     "jade": "*",
     "stylus": "*",
     "marked": "*",
-    "request": "*"
+    "request": "2.21.*",
+    "json-schema": "0.2.*"
   }
 }
